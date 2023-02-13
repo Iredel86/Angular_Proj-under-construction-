@@ -1,0 +1,32 @@
+
+<form>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="customer.name" name="name">
+    </div>
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" [(ngModel)]="customer.age" name="age">
+    </div>
+    <div>
+      <label for="customer_id">Customer ID:</label>
+      <input type="number" id="customer_id" [(ngModel)]="customer.customer_id" name="customer_id">
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="customer.email" name="email">
+    </div>
+    <div>
+      <label for="address">Address:</label>
+      <input type="text" id="address" [(ngModel)]="customer.address" name="address">
+    </div>
+    <div>
+      <label for="city">City:</label>
+      <input type="text" id="city" [(ngModel)]="customer.city" name="city">
+    </div>
+    <div>
+      <label for="p_number">Phone Number:</label>
+      <input type="number" id="p_number" [(ngModel)]="customer.p_number" name="p_number">
+    </div>
+    <button type="submit" (click)="addCustomer()">Add Customer</button>
+  </form>

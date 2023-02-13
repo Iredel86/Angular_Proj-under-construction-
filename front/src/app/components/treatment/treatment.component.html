@@ -1,0 +1,19 @@
+<form>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="treatment.name" name="name">
+    </div>
+    <div>
+      <label for="type">Type:</label>
+      <input type="string" id="type" [(ngModel)]="treatment.type" name="age">
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <input type="text" id="description" [(ngModel)]="treatment.description" name="customer_id">
+    </div>
+    <div>
+      <label for="price">Price:</label>
+      <input type="price" id="price" [(ngModel)]="treatment.price" name="price">
+    </div>
+    <button type="submit" (click)="addTreatment()">Add Treatment</button>
+  </form>

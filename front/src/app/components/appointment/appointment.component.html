@@ -1,0 +1,27 @@
+<form>
+    <div>
+        <label for="customer">Customer:</label>
+        <select id="customer" [(ngModel)]="appointment.customer.id" name="customer">
+          <option *ngFor="let customer of customers" [value]="customer.id">{{customer.name}}</option>
+        </select>
+      </div>
+      <div>
+        <label for="treatment">Treatment:</label>
+        <select id="treatment" [(ngModel)]="appointment.treatment.id" name="treatment">
+          <option *ngFor="let treatment of treatments" [value]="treatment.id">{{treatment.type}}</option>
+        </select>
+      </div>
+    <div>
+      <label for="date">Date:</label>
+      <input type="text" id="date" [(ngModel)]="appointment.date" name="date">
+    </div>
+    <div>
+      <label for="time">Time:</label>
+      <input type="text" id="time" [(ngModel)]="appointment.time" name="time">
+    </div>
+    <div>
+      <label for="status">Status:</label>
+      <input type="text" id="status" [(ngModel)]="appointment.status" name="status">
+    </div>
+    <button type="submit" (click)="addAppointment()">Add Appointment</button>
+</form>

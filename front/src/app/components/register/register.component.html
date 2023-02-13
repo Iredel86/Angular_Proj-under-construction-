@@ -1,0 +1,11 @@
+<p>Register</p>
+
+Username:<input #username /> Email:<input #email /><br />
+Password:<input type="password" #password /> Confirm Password:<input type="password" #confirmPassword />
+<br />
+<button (click)="register(username.value, email.value, password.value, confirmPassword.value)">
+    Register
+</button>
+
+<br />
+<hr />
